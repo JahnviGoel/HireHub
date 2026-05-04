@@ -315,7 +315,7 @@ This project is licensed under the ISC License.
 
 ## 👨‍💻 Author
 
-**Jai Goel** - Full-stack Developer
+**Jahnvi Goel** - Full-stack Developer
 
 ---
 
