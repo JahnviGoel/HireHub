@@ -14,7 +14,8 @@ const quizResultSchema = new mongoose.Schema({
     ref: "Job"
   },
   score: Number,
-  passed: Boolean
+  total: Number,
+  passed: Boolean,
 }, 
 { timestamps: true });
 
