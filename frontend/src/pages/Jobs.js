@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function Jobs() {
   const [jobs, setJobs] = useState([]);
-  const [appliedJobs, setAppliedJobs] = useState([]);
+  const [appliedJobs] = useState([]);
   const navigate = useNavigate();
   // 🔹 Fetch Jobs
   useEffect(() => {

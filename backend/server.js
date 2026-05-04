@@ -776,7 +776,9 @@ app.put("/api/admin/final-result/:applicationId", authMiddleware, async (req, re
 // });
 
 // start server
-app.listen(5000, () => {
-  console.log("Server running at http://localhost:5000");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
 });
 

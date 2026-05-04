@@ -1,7 +1,10 @@
 import axios from "axios";
 
+export const API_BASE_URL = process.env.REACT_APP_API_URL || "https://hirehub-7m0w.onrender.com/api";
+export const SERVER_BASE_URL = API_BASE_URL.replace(/\/api\/?$/, "");
+
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api",
+  baseURL: API_BASE_URL,
 });
 
 // Attach token automatically

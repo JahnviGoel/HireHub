@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import API from "../api/axios";
+import API, { SERVER_BASE_URL } from "../api/axios";
 
 function Applicants() {
 
@@ -80,7 +80,7 @@ function Applicants() {
             {/* Resume */}
             {app.user?.resume && (
               <a
-                href={`http://localhost:5000/${app.user.resume}`}
+                href={`${SERVER_BASE_URL}/${app.user.resume}`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-blue-600 underline"

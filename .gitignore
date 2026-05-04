@@ -11,3 +11,4 @@ frontend/build/
 /build
 .vscode/
 .idea/
+.vercel
